@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title> </title>
+</head>
+
+<body>
+    <div class="screen" onclick="toggleMenu()"></div>
+    <div onclick="onCloseModal(event)" class="modal-background hidden">
+        <div onclick="stop(event)" class="modal-window hidden">
+            <form class="modal-content">
+                <h3>Join us to get access to the latest stories!</h3>
+                <section class="email">
+                    <label for="email-sub" id="">Write us your Email</label>
+                    <input type="email" name="" id="email-sub">
+                    <button onclick="onSubmit(event)" class="submit">Submit</button>
+                    
+                </section>
+                <h4 class="thank-msg hidden">Thank you. <p></p>
+                    We'll contact you soon
+                </h4>
+                <button onclick="onCloseModal(event)" class="close">Close</button>
+            </form>
+        </div>
+    </div>
+    <header class="main-header flex space-between align-center">
+
+        <section class="header-container container flex main-header space-between align-center">
+            <div class="logo">
+                Blogin<span class="logo-dot">.</span>
+            </div>
+
+            <button onclick="toggleMenu()" class="hamburger">☰</button>
+            <nav class="nav-bar flex  align-center">
+                <button class="nav-btn flex align-center">Journal</button>
+                <button class="nav-btn flex align-center">About</button>
+                <button class="nav-btn flex align-center">Work</button>
+                <button class="nav-btn flex align-center">Contact</button>
+            </nav>
+
+        </section>
+
+    </header>
+
+
+    <main class="main-content cards-container container">
+
+
+        <div class="card flex">
+
+
+            <img class="card-img" src="img/001.png" alt="">
+
+            <div class="card-content flex space-between">
+                <h1 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.
+                </h1>
+                <p class="card-text-first">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text-second">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla
+                    pariatur...
+                </p>
+                <button data-span="1" onclick="onOpenModal(1)" class="card-btn">Continue Reading <span class="green-arrow green-arrow1">→</span></button>
+            </div>
+
+        </div>
+
+        <div class="card flex">
+
+            <img class="card-img" src="img/002.png" alt="">
+            <div class="card-content flex space-between">
+                <h1 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.
+                </h1>
+                <p class="card-text-first">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text-second">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla
+                    pariatur...
+                </p>
+                <button data-span="2" onclick="onOpenModal(2)" class="card-btn">Continue Reading <span class="green-arrow green-arrow2">→</span> </button>
+            </div>
+
+        </div>
+
+        <div class="card flex">
+
+            <img class="card-img" src="img/003.png" alt="">
+            <div class="card-content flex space-between">
+                <h1 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h1>
+                <p class="card-text-first">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text-second">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla
+                    pariatur...
+                    <!-- <img src="img/prev-arrow.svg" alt=""> -->
+                </p>
+                <button data-span="3" onclick="onOpenModal(3)" class="card-btn">Continue Reading <span class="green-arrow green-arrow3">→</span></button>
+            </div>
+
+        </div>
+
+        <section class="container flex align-center space-between posts-nav">
+            <div class="posts-btn-prev">
+                <div class="prev">← Previous</div>
+            </div>
+            <div class="posts-btn-next">
+                <div class="next">Next →</div>
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="main-footer">
+        <div class="footer-logo">Blogin<span class="logo-dot">.</span></div>
+        <small class="copy-rights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span
+                class="copy-rights-bold">Pixelhint.com</span></small>
+        <nav class="social">
+            <button class="social-links-btn fb-btn"><img class="fb-svg" src="img/facebook.svg" alt=""></button>
+            <button class="social-links-btn twitter-btn"><img class="twitter-svg" src="img/twitter.svg" alt=""></button>
+            <button class="social-links-btn ba-btn"><img class="ba-svg" src="img/ba.svg" alt=""></button>
+            <button class="social-links-btn dribbler-btn"><img class="dribbler-svg" src="img/dribbler.svg"
+                    alt=""></button>
+        </nav>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
