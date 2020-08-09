@@ -659,9 +659,17 @@ h1.card-title {
     }
 
     .modal-content {
-        font-size: 23px;
+        font-size: 19px;
+        text-align: center;
+        line-height: 2.1rem;
+        height: 70%;
     }
 
+    .close {
+        
+        bottom: 11%;
+        
+    }
     
     
 
@@ -729,5 +737,7 @@ h1.card-title {
         opacity: 1;
         visibility: visible;
     }
+
+    
     
 }
