@@ -36,10 +36,19 @@
 
             <button onclick="toggleMenu()" class="hamburger">☰</button>
             <nav class="nav-bar flex  align-center">
-                <button class="nav-btn flex align-center">Journal</button>
-                <button class="nav-btn flex align-center">About</button>
-                <button class="nav-btn flex align-center">Work</button>
-                <button class="nav-btn flex align-center">Contact</button>
+                <div onclick="onOpenDropdown()" class="dropdown ">
+                    <button data-drop="yes" onclick="onToggleBtnsfocus(this)" class="dropbtn nav-btn flex align-center">Journal</button>
+                    <div class="dropdown-content">
+                      <a onclick="stop(event)" href="#">October 2016</a>
+                      <a onclick="stop(event)" href="#">January 2017</a>
+                      <a onclick="stop(event)" href="#">April 2017</a>
+                      <a onclick="stop(event)" href="#">July 2017</a>
+                    </div>
+                  </div>
+                <!-- <button onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">Journal</button> -->
+                <button onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">About</button>
+                <button onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">Work</button>
+                <button onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">Contact</button>
             </nav>
 
         </section>
@@ -137,10 +146,11 @@
             <button class="social-links-btn ba-btn"><img class="ba-svg" src="img/ba.svg" alt=""></button>
             <button class="social-links-btn dribbler-btn"><img class="dribbler-svg" src="img/dribbler.svg"
                     alt=""></button>
+                    <!-- <i class="fas fa-ambulance amb"></i> -->
         </nav>
     </footer>
 
-
+    <script src="https://kit.fontawesome.com/9ca7f01aba.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 

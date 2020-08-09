@@ -1,4 +1,9 @@
 'use strict'
+
+
+const elDropdownCont = document.querySelector('.dropdown-content');
+
+
 const elCardBtns = document.querySelectorAll('.card-btn');
 elCardBtns.forEach((cardBtn) => {
     cardBtn.addEventListener('mouseenter', onCardBtnHover)
@@ -46,7 +51,7 @@ function onSubmit(ev) {
         showThankMsg()
         elInput.value = ''
     }, 600)
-    
+
 
 }
 
@@ -59,12 +64,12 @@ function showThankMsg() {
 }
 
 function onCloseModal(ev) {
-    
+
     ev.preventDefault()
     const elModalBackground = document.querySelector('.modal-background');
     const elModalWindow = document.querySelector('.modal-window');
-    
-    
+
+
     elModalBackground.classList.remove('show')
     elModalWindow.classList.remove('show')
     elModalBackground.classList.add('disapear')
@@ -74,7 +79,7 @@ function onCloseModal(ev) {
         elModalWindow.classList.add('hidden')
     }, 600)
     toggleEmailSection()
-    
+
 }
 
 function toggleEmailSection(ev) {
@@ -88,8 +93,45 @@ function stop(ev) {
 }
 
 
+
 function toggleMenu() {
-    // const elNavBar = document.querySelector('.nav-bar');
+    const elDropBtn = document.querySelector('.dropbtn');
     // elNavBar.style.visibility = 'visible'
     document.body.classList.toggle('menu-open')
+    
+    elDropdownCont.classList.remove('down')
+    elDropBtn.classList.remove('focus')
+    
+
+
+}
+
+function onToggleBtnsfocus(elBtn) {
+
+
+
+    const elBtns = document.querySelectorAll('.nav-btn');
+    let elDropdown;
+    elBtns.forEach(currBtn => {
+        if (currBtn.dataset.drop) {
+            elDropdown = currBtn
+            return
+        }
+        currBtn.classList.remove('focus')
+    })
+    if (elBtn.dataset.drop) {
+        elBtn.classList.toggle('focus')
+    } else {
+        elBtn.classList.add('focus')
+        elDropdown.classList.remove('focus')
+        elDropdownCont.classList.remove('down')
+
+    }
+
+
+}
+
+function onOpenDropdown() {
+    elDropdownCont.classList.toggle('down')
+    
 }
