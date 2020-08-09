@@ -108,7 +108,7 @@ function toggleMenu() {
 
 function onToggleBtnsfocus(elBtn) {
 
-
+    
 
     const elBtns = document.querySelectorAll('.nav-btn');
     let elDropdown;
@@ -116,11 +116,13 @@ function onToggleBtnsfocus(elBtn) {
         if (currBtn.dataset.drop) {
             elDropdown = currBtn
             return
+        }else {
+            currBtn.classList.remove('focus')
         }
-        currBtn.classList.remove('focus')
     })
     if (elBtn.dataset.drop) {
         elBtn.classList.toggle('focus')
+        elDropdownCont.classList.toggle('down')
     } else {
         elBtn.classList.add('focus')
         elDropdown.classList.remove('focus')
@@ -131,7 +133,7 @@ function onToggleBtnsfocus(elBtn) {
 
 }
 
-function onOpenDropdown() {
-    elDropdownCont.classList.toggle('down')
+// function onOpenDropdown() {
+//     elDropdownCont.classList.toggle('down')
     
-}
+// }

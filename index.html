@@ -36,8 +36,8 @@
 
             <button onclick="toggleMenu()" class="hamburger">☰</button>
             <nav class="nav-bar flex  align-center">
-                <div onclick="onOpenDropdown()" class="dropdown ">
-                    <button data-drop="yes" onclick="onToggleBtnsfocus(this)" class="dropbtn nav-btn flex align-center">Journal</button>
+                <div class="dropdown ">
+                    <button id="0" data-drop="yes" onclick="onToggleBtnsfocus(this)" class="dropbtn nav-btn flex align-center">Journal</button>
                     <div class="dropdown-content">
                       <a onclick="stop(event)" href="#">October 2016</a>
                       <a onclick="stop(event)" href="#">January 2017</a>
@@ -46,9 +46,9 @@
                     </div>
                   </div>
                 <!-- <button onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">Journal</button> -->
-                <button onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">About</button>
-                <button onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">Work</button>
-                <button onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">Contact</button>
+                <button id="1" onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">About</button>
+                <button id="2" onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">Work</button>
+                <button id="3" onclick="onToggleBtnsfocus(this)" class="nav-btn flex align-center">Contact</button>
             </nav>
 
         </section>
