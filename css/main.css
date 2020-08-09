@@ -658,6 +658,15 @@ h1.card-title {
         opacity: 0.2;
     }
 
+    .modal-content {
+        font-size: 23px;
+    }
+
+    
+    
+
+    
+    
     .copy-rights {
         letter-spacing: 0.01rem;
 
