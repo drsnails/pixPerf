@@ -130,10 +130,4 @@ function onToggleBtnsfocus(elBtn) {
 
     }
 
-
 }
-
-// function onOpenDropdown() {
-//     elDropdownCont.classList.toggle('down')
-    
-// }
